@@ -47,7 +47,7 @@ class Session:
 
         send_mail(subject="Verify your email address",
                 message= email_body,
-                from_email="ztong@andrew.cmu.edu",
+                from_email="noreply.mymonopoly",
                 recipient_list=[user.email])
 
         return True, None
