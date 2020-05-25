@@ -167,3 +167,7 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+
+# email backup codes
+Backup-codes-noreply.mymonopoly.txt
+
