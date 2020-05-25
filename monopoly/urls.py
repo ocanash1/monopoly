@@ -1,8 +1,6 @@
 from django.conf.urls import url
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import views as auth_views
-from django.views.static import serve 
-from django.conf import settings
 
 from monopoly.views.game_view import GameView
 from monopoly.views.join_view import JoinView
@@ -22,7 +20,5 @@ urlpatterns = [
     url(r'^confirm-registration/(?P<username>[a-zA-Z0-9]+)/(?P<token>[a-z0-9\-]+)$',
         ConfirmRegistrationView.as_view(), name='confirm'),
     url(r'^.*$', login_required(JoinView.as_view()), name="join"),
-    url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 
 ]
