@@ -35,7 +35,8 @@ DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['localhost',
                  '127.0.0.1',
-                 'my-monopoly.herokuapp.com']
+                 'my-monopoly.herokuapp.com',
+                 '.fuckxboxmonopoly.com']
 
 # Application definition
 
