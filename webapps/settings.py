@@ -150,7 +150,7 @@ EMAIL_HOST = config.get('Email', 'Host')
 EMAIL_USE_TLS = True
 EMAIL_PORT = int(config.get('Email', 'Port'))
 EMAIL_HOST_USER = config.get('Email', 'User')
-EMAIL_HOST_PASSWORD = config.get('Email', 'Password')
+EMAIL_HOST_PASSWORD = os.environ.get('MONOPOLY_EMAIL_PASSWORD')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'userdata')
 MEDIA_URL = '/userdata/'
