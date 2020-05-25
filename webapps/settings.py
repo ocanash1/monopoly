@@ -34,7 +34,7 @@ DEBUG = True  # TODO update to env var too
 ALLOWED_HOSTS = ['localhost',
                  '127.0.0.1',
                  '192.0.2.143',
-                 'https://my-monopoly.herokuapp.com/']
+                 'my-monopoly.herokuapp.com']
 
 # Application definition
 
