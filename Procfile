@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath monopoly webapps.wsgi

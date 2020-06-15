@@ -1,7 +1,7 @@
 # Project
 *.imi
-*.ini
-config.ini
+# *.ini
+# config.ini
 migrations
 db.sqlite3
 .idea/misc.xml
@@ -166,4 +166,8 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+
+# email backup codes
+Backup-codes-noreply.mymonopoly.txt
 
